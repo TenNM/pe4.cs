@@ -1,0 +1,10 @@
+C:\Users\tenmv\source\repos\pe4\bin\Debug\pe4.exe.config
+C:\Users\tenmv\source\repos\pe4\bin\Debug\pe4.exe
+C:\Users\tenmv\source\repos\pe4\bin\Debug\pe4.pdb
+C:\Users\tenmv\source\repos\pe4\obj\Debug\pe4.csprojAssemblyReference.cache
+C:\Users\tenmv\source\repos\pe4\obj\Debug\pe4.Calc.resources
+C:\Users\tenmv\source\repos\pe4\obj\Debug\pe4.Properties.Resources.resources
+C:\Users\tenmv\source\repos\pe4\obj\Debug\pe4.csproj.GenerateResource.cache
+C:\Users\tenmv\source\repos\pe4\obj\Debug\pe4.csproj.CoreCompileInputs.cache
+C:\Users\tenmv\source\repos\pe4\obj\Debug\pe4.exe
+C:\Users\tenmv\source\repos\pe4\obj\Debug\pe4.pdb
