@@ -48,6 +48,8 @@
             this.chartFoo = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxFx = new System.Windows.Forms.TextBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.groupBoxInData.SuspendLayout();
             this.groupBoxChangeFoo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartFoo)).BeginInit();
@@ -126,13 +128,14 @@
             // 
             // groupBoxChangeFoo
             // 
+            this.groupBoxChangeFoo.Controls.Add(this.radioButton1);
             this.groupBoxChangeFoo.Controls.Add(this.radioButtonFoo2);
             this.groupBoxChangeFoo.Controls.Add(this.radioButtonFoo1);
-            this.groupBoxChangeFoo.Location = new System.Drawing.Point(253, 16);
+            this.groupBoxChangeFoo.Location = new System.Drawing.Point(253, 11);
             this.groupBoxChangeFoo.Margin = new System.Windows.Forms.Padding(2);
             this.groupBoxChangeFoo.Name = "groupBoxChangeFoo";
             this.groupBoxChangeFoo.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBoxChangeFoo.Size = new System.Drawing.Size(200, 84);
+            this.groupBoxChangeFoo.Size = new System.Drawing.Size(200, 98);
             this.groupBoxChangeFoo.TabIndex = 1;
             this.groupBoxChangeFoo.TabStop = false;
             this.groupBoxChangeFoo.Text = "Выбор функции";
@@ -140,7 +143,7 @@
             // radioButtonFoo2
             // 
             this.radioButtonFoo2.AutoSize = true;
-            this.radioButtonFoo2.Location = new System.Drawing.Point(43, 59);
+            this.radioButtonFoo2.Location = new System.Drawing.Point(43, 55);
             this.radioButtonFoo2.Margin = new System.Windows.Forms.Padding(2);
             this.radioButtonFoo2.Name = "radioButtonFoo2";
             this.radioButtonFoo2.Size = new System.Drawing.Size(124, 17);
@@ -153,7 +156,7 @@
             // 
             this.radioButtonFoo1.AutoSize = true;
             this.radioButtonFoo1.Checked = true;
-            this.radioButtonFoo1.Location = new System.Drawing.Point(43, 39);
+            this.radioButtonFoo1.Location = new System.Drawing.Point(43, 36);
             this.radioButtonFoo1.Margin = new System.Windows.Forms.Padding(2);
             this.radioButtonFoo1.Name = "radioButtonFoo1";
             this.radioButtonFoo1.Size = new System.Drawing.Size(91, 17);
@@ -188,7 +191,7 @@
             // labelResult
             // 
             this.labelResult.AutoSize = true;
-            this.labelResult.Location = new System.Drawing.Point(284, 102);
+            this.labelResult.Location = new System.Drawing.Point(284, 114);
             this.labelResult.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelResult.Name = "labelResult";
             this.labelResult.Size = new System.Drawing.Size(59, 13);
@@ -197,7 +200,7 @@
             // 
             // textBoxResult
             // 
-            this.textBoxResult.Location = new System.Drawing.Point(347, 99);
+            this.textBoxResult.Location = new System.Drawing.Point(347, 111);
             this.textBoxResult.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxResult.Name = "textBoxResult";
             this.textBoxResult.ReadOnly = true;
@@ -210,7 +213,7 @@
             this.chartFoo.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chartFoo.Legends.Add(legend1);
-            this.chartFoo.Location = new System.Drawing.Point(33, 149);
+            this.chartFoo.Location = new System.Drawing.Point(33, 157);
             this.chartFoo.Margin = new System.Windows.Forms.Padding(2);
             this.chartFoo.Name = "chartFoo";
             series1.ChartArea = "ChartArea1";
@@ -225,7 +228,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(284, 134);
+            this.label1.Location = new System.Drawing.Point(287, 138);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(51, 13);
@@ -234,18 +237,41 @@
             // 
             // textBoxFx
             // 
-            this.textBoxFx.Location = new System.Drawing.Point(347, 131);
+            this.textBoxFx.Location = new System.Drawing.Point(347, 135);
             this.textBoxFx.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxFx.Name = "textBoxFx";
             this.textBoxFx.ReadOnly = true;
             this.textBoxFx.Size = new System.Drawing.Size(68, 20);
             this.textBoxFx.TabIndex = 8;
             // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(43, 17);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(2);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(127, 17);
+            this.radioButton1.TabIndex = 2;
+            this.radioButton1.Text = "x^3 + 3x^2 - x + 1 = 0";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(296, 84);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(2);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(98, 17);
+            this.radioButton2.TabIndex = 3;
+            this.radioButton2.Text = "e^x + 2x - 4 = 0";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
             // Calc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(469, 354);
+            this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.textBoxFx);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.chartFoo);
@@ -288,6 +314,8 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart chartFoo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBoxFx;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButton2;
     }
 }
 

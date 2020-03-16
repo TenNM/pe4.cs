@@ -79,6 +79,7 @@ namespace pe4
 
             drowOnChart(f.d_foo, a, b);
         }
+
         //--------------------------------------------------------------------------GUI
         void RadioButtonFoo1_CheckedChanged(object sender, EventArgs e){ f.change_foo(1); }
         void RadioButtonFoo2_CheckedChanged(object sender, EventArgs e){ f.change_foo(2); }
