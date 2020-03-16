@@ -35,21 +35,51 @@ namespace pe4
         {
             return 12 * x + 2;
         }
+        static double f3(double x)
+        {
+            return Math.Exp(x) + 2 * x + 4;
+        }
+        static double f3_dx(double x)
+        {
+            return Math.Exp(x) + 2;
+        }
+        static double f4(double x)
+        {
+            return Math.Pow(x, 3) + 3 * x * x - x + 1;
+        }
+        static double f4_dx(double x)
+        {
+            return 3 * x * x + 6 * x - 1;
+        }
+
         internal void change_foo(int number)
         {
             switch (number)
             {
-                case 1:{
+                case 1:
+                    {
                         d_foo = new deledate_foo(f1);
                         d_foo_dx = new deledate_foo(f1_dx);
-                        d_foo_ddx = new deledate_foo(f1_ddx);
-                    } break;
-
-                default: {
+                    }
+                    break;
+                case 2:
+                    {
                         d_foo = new deledate_foo(f2);
                         d_foo_dx = new deledate_foo(f2_dx);
-                        d_foo_ddx = new deledate_foo(f1_ddx);
-                    } break;
+                    }
+                    break;
+                case 3:
+                    {
+                        d_foo = new deledate_foo(f3);
+                        d_foo_dx = new deledate_foo(f3_dx);
+                    }
+                    break;
+                default:
+                    {
+                        d_foo = new deledate_foo(f4);
+                        d_foo_dx = new deledate_foo(f4_dx);
+                    }
+                    break;
             }
         }
         internal double Newton(double x)

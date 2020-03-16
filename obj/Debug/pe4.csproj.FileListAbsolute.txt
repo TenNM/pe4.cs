@@ -17,3 +17,13 @@ C:\Users\ТУРБО-ПУШКА\Source\Repos\pe4.cs\obj\Debug\pe4.Properties.Reso
 C:\Users\ТУРБО-ПУШКА\Source\Repos\pe4.cs\obj\Debug\pe4.csproj.GenerateResource.cache
 C:\Users\ТУРБО-ПУШКА\Source\Repos\pe4.cs\obj\Debug\pe4.exe
 C:\Users\ТУРБО-ПУШКА\Source\Repos\pe4.cs\obj\Debug\pe4.pdb
+C:\Users\tenmv\Source\Repos\pe4.cs\bin\Debug\pe4.exe.config
+C:\Users\tenmv\Source\Repos\pe4.cs\bin\Debug\pe4.exe
+C:\Users\tenmv\Source\Repos\pe4.cs\bin\Debug\pe4.pdb
+C:\Users\tenmv\Source\Repos\pe4.cs\obj\Debug\pe4.csprojAssemblyReference.cache
+C:\Users\tenmv\Source\Repos\pe4.cs\obj\Debug\pe4.Calc.resources
+C:\Users\tenmv\Source\Repos\pe4.cs\obj\Debug\pe4.Properties.Resources.resources
+C:\Users\tenmv\Source\Repos\pe4.cs\obj\Debug\pe4.csproj.GenerateResource.cache
+C:\Users\tenmv\Source\Repos\pe4.cs\obj\Debug\pe4.csproj.CoreCompileInputs.cache
+C:\Users\tenmv\Source\Repos\pe4.cs\obj\Debug\pe4.exe
+C:\Users\tenmv\Source\Repos\pe4.cs\obj\Debug\pe4.pdb

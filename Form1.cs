@@ -83,6 +83,9 @@ namespace pe4
         //--------------------------------------------------------------------------GUI
         void RadioButtonFoo1_CheckedChanged(object sender, EventArgs e){ f.change_foo(1); }
         void RadioButtonFoo2_CheckedChanged(object sender, EventArgs e){ f.change_foo(2); }
+        void RadioButtonFoo3_CheckedChanged(object sender, EventArgs e){ f.change_foo(3); }
+        void RadioButtonFoo4_CheckedChanged(object sender, EventArgs e){ f.change_foo(4); }
+        //-----
         private void ButtonNewton_Click(object sender, EventArgs e)  { searchRoots('n'); }
         private void ButtonDichtomy_Click(object sender, EventArgs e){ searchRoots('d'); }
         //----------------------------------------------------------------------end
