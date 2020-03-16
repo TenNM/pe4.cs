@@ -8,13 +8,14 @@ namespace pe4
         const string ERR_INPUT_DATA = "Ошибка: входные данные неверны";
         const string ERR_EMPTY_FIELDS = "Ошибка: пустые поля";
         const string ERR_NO_ROOTS_ON_AB = "Ошибка: на данном отрезке нет корней";
+        const string ERR_NAN = "Ошибка: проблема с ОДЗ";
         Function f = new Function();
         double x, a, b, c, e;
         public Calc()
         {
             InitializeComponent();
             f.change_foo(1);
-            textBoxBorderA.Text = "-5";
+            textBoxBorderA.Text = "1";
             textBoxBorderB.Text = "5";
             textBoxEps.Text = "0,001";
         }
@@ -22,7 +23,7 @@ namespace pe4
         void drowOnChart(Function.deledate_foo foo, double a, double b)
         {
             chartFoo.Series[0].Points.Clear();
-            for (double i = a; i < b; i+= 0.01) {
+            for (double i = a; i < b; i+= 0.1) {
                 chartFoo.Series[0].Points.AddXY(i, foo(i));
             }
         }
@@ -53,17 +54,25 @@ namespace pe4
 
                 if (isRootsOnAB(f.d_foo, a, b)) {
                     f.e = e;
-                    switch (method)
-                    {
-                        case 'n': {
-                            x = f.Newton( (a+b)/2 + 10*e );
-                        } break;
-                        case 'd': {
-                            x = f.dichotomy(a, b);
-                        } break;
+                    try {
+                        switch (method)
+                        {
+                            case 'n': {
+                                    x = f.Newton(a);
+                                    //double j = (a + b) / 2;
+                                    //if (f.d_foo(j) * f.d_foo_ddx(j) > 0 && f.d_foo(j) * f.d_foo_dx(j) > 0)
+                                    //{ x = f.Newton(j); }
+                                    //else x = f.Newton(j);
+                                } break;
+                            case 'd': {
+                                x = f.dichotomy(a, b);
+                            } break;
+                        }
                     }
+                    catch { MessageBox.Show(ERR_NAN); }
                     textBoxResult.Text = x.ToString();
-                    
+                    textBoxFx.Text = f.d_foo(x).ToString();
+
                 } else MessageBox.Show(ERR_NO_ROOTS_ON_AB);
             }
             else MessageBox.Show(ERR_EMPTY_FIELDS);
